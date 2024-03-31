@@ -1,0 +1,36 @@
+@media screen and (max-width: 1200px) {
+  .main h1 {
+    font-size: 6rem;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main p {
+    font-size: 1rem;
+    border: dashed 2px;
+    padding: 5px;
+  }
+
+  .main h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+  #snaks {
+    margin-top: 2rem;
+  }
+  #burger {
+    position: relative;
+    z-index: 0;
+  }
+  #blur {
+    box-shadow: none;
+    padding: 0px;
+  }
+  #text-style {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  #photo {
+    padding: 1rem;
+  }
+}

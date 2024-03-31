@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --heading-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
+}
+
+/* main-page-start */
+.main {
+  background-image: url(img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--heading-font);
+  color: #3d2514;
+  padding-bottom: 5rem;
+}
+
+.main p {
+  display: inline-block;
+  font-size: 1.3rem;
+  border: dashed 2px;
+  padding: 8px;
+}
+
+.main h1 {
+  font-size: 9rem;
+  font-weight: bolder;
+  text-shadow: 5px 5px 0px #fee8bc;
+}
+
+#burger {
+  position: relative;
+  z-index: 1;
+}
+
+#snaks {
+  margin-top: 6rem;
+}
+#drink {
+  position: absolute;
+  right: 10%;
+  transform: translatey(-100%);
+}
+
+#price {
+  position: absolute;
+  left: 60%;
+  transform: translatey(-70%);
+  background-color: #bf2222;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+#price span {
+  font-size: 1.4rem;
+  color: #ffff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: dashed 2px white;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* main-page-end */
+
+/* categoery-section-start */
+#categoery {
+  margin: 5rem 0rem;
+}
+#text-style {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+#text-style span {
+  background-color: #efc470;
+  color: #3d2514;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+/* categoery-section-end */
+
+/* order-section-start */
+#head {
+  color: #3d2514;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#head-2 {
+  color: #3d2514;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#menu {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+
+#order {
+  background-color: #cc3333;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 20px;
+  border: none;
+}
+
+/* order-section-end */
+
+/* event-section-start */
+#event {
+  margin: 5rem 0rem;
+}
+
+#blur {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+.carousel-item {
+  width: 100%;
+  height: 30rem;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  backdrop-filter: blur(5px);
+}
+/* event-section-end */
+
+/* input-table-start */
+#table {
+  margin: 5rem 0rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+/* input-tbale-end */
+
+/* confirm-table-start*/
+#confirm {
+  width: 100%;
+  padding: 10px;
+}
+.name {
+  color: blue; /* Example color */
+  font-weight: bold; /* Example font weight */
+  /* Add any other styles you want */
+}
+#code {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 30px 40px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.main-2 {
+  background-image: url(img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--heading-font);
+  color: #3d2514;
+}
+
+#find {
+  background-color: #cc3333;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+/* confirm-table-end */
+
+/* footer-start */
+
+#photo {
+  background-color: black;
+  color: #fff;
+  padding: 5rem;
+}
+#media p {
+  font-size: 1.9rem;
+}
+#media ul li {
+  font-size: 1.8rem;
+  text-decoration: none;
+  list-style: none;
+}
+/* footer-end */
