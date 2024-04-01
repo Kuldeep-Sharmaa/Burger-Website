@@ -155,30 +155,36 @@ window.onload = function () {
     document.getElementById("verification").innerHTML =
       "Hello <span class='name'>" +
       nam +
-      "</span>, Verification code has been sent to your email. Please enter the same here to book the Table. Valid for 10 minutes";
+      "</span>, Verification code has been sent to your email. Please enter the same here to book your Table. Valid for 10 minutes";
   }
 };
 
+// Conditions
+
 function otp() {
   var confirm = document.getElementById("otp-input").value;
+
   if (confirm == "" || isNaN(confirm) || confirm.length < 4) {
-    document.getElementById("check").innerText = "Invalid OTP";
+    document.getElementById("otpError").innerHTML = "Invalid OTP";
+
     setTimeout(function () {
-      document.getElementById("check").innerText = "";
+      document.getElementById("otpError").innerText = "";
     }, 3000);
     return false;
   } else if (confirm !== "") {
-    var confirm = Math.floor(Math.random() * 100);
-    document.getElementById("check").innerText =
-      "Congratulations! Your booking has been confirmed. Your Table Number is - " +
-      confirm;
+    var confirmNumber = Math.floor(Math.random() * 100);
+    document.getElementById("check").innerHTML =
+      "Your booking has been confirmed. Your Table Number is - " +
+      confirmNumber;
+    document.getElementById("check").style.display = "flex";
 
     setTimeout(function () {
-      document.getElementById("check").innerText = "";
-    }, 10000);
+      document.getElementById("check").style.display = "none";
+    }, 20000);
   }
+
   setTimeout(function () {
     window.location.href = "index.html";
-  }, 10000);
+  }, 20000);
   return true;
 }
