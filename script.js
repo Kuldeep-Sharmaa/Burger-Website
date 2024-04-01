@@ -161,11 +161,12 @@ window.onload = function () {
 
 function otp() {
   var confirm = document.getElementById("otp-input").value;
-  if (confirm == "" || isNaN(confirm)) {
+  if (confirm == "" || isNaN(confirm) || confirm.length < 4) {
     document.getElementById("check").innerText = "Invalid OTP";
     setTimeout(function () {
       document.getElementById("check").innerText = "";
     }, 3000);
+    return false;
   } else if (confirm !== "") {
     var confirm = Math.floor(Math.random() * 100);
     document.getElementById("check").innerText =
