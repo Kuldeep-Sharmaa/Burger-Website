@@ -163,15 +163,19 @@ window.onload = function () {
 
 function otp() {
   var confirm = document.getElementById("otp-input").value;
-
-  if (confirm == "" || isNaN(confirm) || confirm.length < 4) {
+  var spaceConfirm = confirm.trim();
+  if (
+    /^\s*$/.test(spaceConfirm) === "" ||
+    isNaN(spaceConfirm) ||
+    spaceConfirm.length < 4
+  ) {
     document.getElementById("otpError").innerHTML = "Invalid OTP";
 
     setTimeout(function () {
       document.getElementById("otpError").innerText = "";
     }, 3000);
     return false;
-  } else if (confirm !== "") {
+  } else if (spaceConfirm !== "") {
     var confirmNumber = Math.floor(Math.random() * 100);
     document.getElementById("check").innerHTML =
       "Your booking has been confirmed. Your Table Number is - " +
