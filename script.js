@@ -68,14 +68,14 @@ function Check() {
       document.getElementById("error-Confirm-password").innerHTML =
         "<span style='color: red;'>Please confirm your password</span>";
       setTimeout(function () {
-        document.getElementById("error-Confirm-password").innerText = "";
+        document.getElementById("error-Confirm-password").innerText = "    ";
       }, 3000);
       return false;
     }
     // pasword not match
     else if (confirm_Passw !== passw) {
       document.getElementById("error-Confirm-password").innerHTML =
-        "<span style='color: red;'>Passwords do not match</span>";
+        "<span style='color: red;'> Passwords do not match</span>";
       setTimeout(function () {
         document.getElementById("error-Confirm-password").innerText = "";
       }, 3000);
