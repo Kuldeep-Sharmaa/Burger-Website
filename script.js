@@ -53,6 +53,7 @@ function Check() {
       }, 3000);
       return false;
     }
+
     //   Password Legth
     else if (passw.length < 6) {
       document.getElementById("error-password").innerHTML =
@@ -72,6 +73,7 @@ function Check() {
       }, 3000);
       return false;
     }
+
     // pasword not match
     else if (confirm_Passw !== passw) {
       document.getElementById("error-Confirm-password").innerHTML =
